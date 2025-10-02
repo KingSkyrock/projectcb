@@ -1,12 +1,16 @@
 import { useState, useRef } from 'react'
 import './App.css'
+import axios from "axios";
+
 
 function App() {
   const [count, setCount] = useState(0)
   const tokenInput = useRef(null)
 
   function handleShopifyToken() {
-    alert(tokenInput.current.value);
+    axios.post('/shopifyToken', {token: tokenInput.current.value}, {}).then((res) => {
+        
+    })
   }
 
   return (
