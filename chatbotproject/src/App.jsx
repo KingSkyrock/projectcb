@@ -14,7 +14,7 @@ function App() {
       <div>Shopify API Test</div>
       <p>Enter Shopify API Token:</p>
       <input ref={tokenInput}></input>
-      <button onClick={() => handleShopifyToken()}>Submit</button>
+      <button onClick={() => handleShopifyToken()}  >Submit</button>
     </>
   )
 }
